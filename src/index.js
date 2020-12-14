@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Home from './pages/dashboard/home/home.jsx';
+import Home from '../src/pages/dashboard/home/Home';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
