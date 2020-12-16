@@ -6,8 +6,8 @@ class Menu extends React.Component {
         return (
             <Navbar bg="light" expand="lg">
             <Navbar.Brand>Ebenézer</Navbar.Brand>
-            <Navbar.Toggle aria-controls="basic-navbar-nav" />
-            <Navbar.Collapse id="basic-navbar-nav">
+            <Navbar.Toggle aria-controls="nav-menu" />
+            <Navbar.Collapse id="nav-menu">
                 <Nav className="mr-auto">
                 <Nav.Link href="/">Inicio</Nav.Link>
                 <Nav.Link href="#link">Quem Somos</Nav.Link>
