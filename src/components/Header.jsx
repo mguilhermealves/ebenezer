@@ -5,7 +5,7 @@ class Header extends React.Component {
     render() {
         return(
             <header>
-                <Menu></Menu>
+                <Menu />
             </header>
         );
     }

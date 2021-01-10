@@ -1,15 +1,14 @@
 import React from 'react';
 import Dashboard from '../../../layouts/Dashboard';
-import Carousel from '../../../components/Carousel';
 
-class Home extends React.Component {
+class Contact extends React.Component {
     render() {
         return(
             <Dashboard>
-                <Carousel></Carousel>
+                <h1>Olá</h1>
             </Dashboard>
         );
     }
 }
 
-export default Home;
+export default Contact;

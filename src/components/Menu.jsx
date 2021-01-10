@@ -1,5 +1,13 @@
 import React from 'react';
-import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
+import { Navbar, Nav } from 'react-bootstrap';
+import { 
+    Link
+} from 'react-router-dom';
+
+const menuStyle = {
+    color: 'rgba(0,0,0,.5)',
+    textDecoration: 'none'
+};
 
 class Menu extends React.Component {
     render() {
@@ -9,15 +17,15 @@ class Menu extends React.Component {
             <Navbar.Toggle aria-controls="nav-menu" />
             <Navbar.Collapse id="nav-menu">
                 <Nav className="mr-auto">
-                <Nav.Link href="/">Inicio</Nav.Link>
-                <Nav.Link href="#link">Quem Somos</Nav.Link>
-                <Nav.Link href="#link">Contribue!</Nav.Link>
-                <NavDropdown title="Projetos" id="basic-nav-dropdown">
-                    <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                    <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-                    <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-                </NavDropdown>
-                <Nav.Link href="#link">Contato</Nav.Link>
+                <Nav.Link>
+                    <Link style={menuStyle} to={'/'}>Home</Link>
+                </Nav.Link>
+                <Nav.Link href="#">Quem Somos</Nav.Link>
+                <Nav.Link href="#">Contribue!</Nav.Link>
+                <Nav.Link href="#">Projetos</Nav.Link>
+                <Nav.Link>
+                    <Link style={menuStyle} to={'/contact'}>Contato</Link>
+                </Nav.Link>
                 </Nav>
             </Navbar.Collapse>
             </Navbar>
